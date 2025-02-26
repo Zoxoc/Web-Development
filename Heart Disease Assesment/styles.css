@@ -1,0 +1,26 @@
+#navbar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 1rem;
+    justify-content: space-between;
+    text-align: center;
+}
+
+h1 {
+    display: absolute;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+a {
+    display: absolute;
+    margin-right: 10px;
+    color: white;
+}
+
+a:hover {
+    color: rgb(21, 183, 189);
+}
