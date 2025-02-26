@@ -4,12 +4,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heart Disease Assesment</title>
-    <link rel="stylesheet" </head>
+    <title>HeartHealth Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
 <body>
-    <h1>Heart Disease Assesment</h1>
+    <!--Navigation Bar-->
+    <nav id="navbar">
+        <h1>HeartHealth Assessment</h1>
+        <p><a href="#assessment">Assessment</a> <a href="#about"> About</a></p>
+    </nav>
 
+    <!--About Section-->
+    <div class="container">
+        <section class="hero" id="about">
+            <h2>Heart Disease Risk Assessment Tool</h2>
+            <p>This tool helps you understand your potential risk of developing heart disease based on key health
+                indicators. Complete the form below to receive a personalized assessment. Remember, this is not a
+                medical diagnosis, and you should always consult with a healthcare professional.</p>
+        </section>
+    </div>
+
+    <!-- Assessment Form -->
+    <section class="form-section" id="assessment">
+        <h2 class="form-title">Enter Your Health Information</h2>
+        <form id="risk-assessment-form">
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="male">Gender</label>
+                    <select id="male" name="male" required>
+                        <option value="">Select gender</option>
+                        <option value="1">Male</option>
+                        <option value="0">Female</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="18" max="120" required>
+                    <span class="help-text">Years</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="education">Education Level</label>
+                    <select id="education" name="education" required>
+                        <option value="">Select education level</option>
+                        <option value="1">Some High School</option>
+                        <option value="2">High School/GED</option>
+                        <option value="3">Some College/Vocational School</option>
+                        <option value="4">College Degree (Bachelor's)</option>
+                        <option value="5">Graduate/Professional Degree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="currentSmoker">Are you currently a smoker?</label>
+                    <select id="currentSmoker" name="currentSmoker" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="input-group" id="cigsPerDayGroup">
+                    <label for="cigsPerDay">Average cigarettes per day</label>
+                    <input type="number" id="cigsPerDay" name="cigsPerDay" min="0" max="100" required>
+                    <span class="help-text">If you don't smoke, enter 0</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="BPMeds">Are you taking blood pressure medication?</label>
+                    <select id="BPMeds" name="BPMeds" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="prevalentStroke">Have you ever had a stroke?</label>
+                    <select id="prevalentStroke" name="prevalentStroke" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="prevalentHyp">Do you have hypertension?</label>
+                    <select id="prevalentHyp" name="prevalentHyp" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="diabetes">Do you have diabetes?</label>
+                    <select id="diabetes" name="diabetes" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="totChol">Total Cholesterol</label>
+                    <input type="number" id="totChol" name="totChol" min="100" max="600" required>
+                    <span class="help-text">mg/dL</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="sysBP">Systolic Blood Pressure</label>
+                    <input type="number" id="sysBP" name="sysBP" min="80" max="250" required>
+                    <span class="help-text">mmHg (top number)</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="diaBP">Diastolic Blood Pressure</label>
+                    <input type="number" id="diaBP" name="diaBP" min="40" max="150" required>
+                    <span class="help-text">mmHg (bottom number)</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="BMI">Body Mass Index (BMI)</label>
+                    <input type="number" id="BMI" name="BMI" min="10" max="60" step="0.1" required>
+                    <span class="help-text">kg/m²</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="heartRate">Resting Heart Rate</label>
+                    <input type="number" id="heartRate" name="heartRate" min="40" max="200" required>
+                    <span class="help-text">beats per minute</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="glucose">Fasting Blood Glucose</label>
+                    <input type="number" id="glucose" name="glucose" min="50" max="400" required>
+                    <span class="help-text">mg/dL</span>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn">Calculate Risk</button>
+                <button type="reset" class="btn btn-secondary">Reset Form</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Loading Indicator -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Calculating your risk assessment...</p>
+    </div>
+
+    <!-- Results Section (initially hidden) -->
+    <section class="result-section" id="result-section">
+        <div class="result-header">
+            <h2 class="result-title">Your Heart Disease Risk Assessment</h2>
+            <button id="reassess-btn" class="btn">Reassess</button>
+        </div>
+
+        <div class="result-content" id="result-content">
+            <!-- Results will be inserted here by JavaScript -->
+        </div>
+
+        <div class="risk-factors">
+            <h4>Key Risk Factors Identified:</h4>
+            <ul id="risk-factors-list">
+                <!-- Risk factors will be inserted here by JavaScript -->
+            </ul>
+        </div>
+
+        <div class="disclaimer" id="disclaimer">
+            <h4>Important Disclaimer:</h4>
+            <p>This assessment tool provides an estimate based on general risk factors and is for informational purposes
+                only. It is not a medical diagnosis or a substitute for professional medical advice. Always consult with
+                a healthcare provider for personalized health recommendations and before making any changes to your
+                healthcare regimen.</p>
+        </div>
+    </section>
 </body>
 
 </html>
