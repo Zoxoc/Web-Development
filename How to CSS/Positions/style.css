@@ -1,0 +1,142 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.box {
+    border: 1px solid lightgray;
+    width: 300px;
+    padding: 10px;
+    margin: 60px auto;
+    border-radius: 14px;
+}
+
+.food {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.swiggy h1 {
+    font-size: 20px;
+    font-weight: none;
+    margin-bottom: 10px;
+}
+
+#caption {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 50%;
+}
+
+.content {
+    position: relative;
+}
+
+.time {
+    border: 1px solid lightgray;
+    position: absolute;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: white;
+    bottom: 10px;
+    right: 7px;
+    font-size: 14px;
+    color: gray;
+}
+
+.promote {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid lightgray;
+    padding: 0 6px;
+    font-size: 12px;
+    opacity: 65%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: lightgray;
+}
+
+.offer {
+    border: 1px solid lightgray;
+    color: white;
+    background-color: rgb(59, 111, 231);
+    padding: 1px 5px;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+}
+
+.swiggy hr {
+    opacity: 15%;
+}
+
+.delivery {
+    position: relative;
+    font-size: 7px;
+    border: 1px solid lightseagreen;
+    border-radius: 2px;
+    background-color: lightseagreen;
+    width: 55px;
+    height: 25px;
+}
+
+.delivery-container {
+    display: flex;
+    gap: 10px;
+}
+
+.safety {
+    font-size: 6px;
+    border: 1px solid gold;
+    position: absolute;
+    left: auto;
+    right: auto;
+    margin-top: 2px;
+    border-radius: 2px;
+    background-color: gold;
+    padding: 0 2px;
+    margin-left: 2px;
+}
+
+.delivery p {
+    font-size: 8px;
+    color: white;
+    margin-top: 12px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding: 1px;
+}
+
+.safety-text {
+    font-size: 12px;
+    color: #666;
+}
+
+.travel {
+    width: 800px;
+    padding: 10px;
+    margin: 60px auto;
+    position: relative;
+}
+
+.bali {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.travel-content {
+    position: absolute;
+    color: white;
+    bottom: 80px;
+    text-align: center;
+    padding: 0 6px;
+}
+
+.travel-content button {
+    padding: 15px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+}
