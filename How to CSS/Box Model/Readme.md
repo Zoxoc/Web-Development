@@ -1,0 +1,1 @@
+We will be creating designs using the box model (basically div elements) and styling it using CSS
