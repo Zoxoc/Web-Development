@@ -140,3 +140,53 @@ body {
     border-radius: 30px;
     font-size: 14px;
 }
+
+.zomato {
+    width: 800px;
+    margin: 60px auto;
+    position: relative;
+}
+
+.bg-image {
+    width: 100%;
+}
+
+.zomato-content {
+    position: absolute;
+    bottom: 22%;
+    left: 26%;
+    width: 400px;
+}
+
+.logo {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.zomato-content p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.search {
+    width: 380px;
+    height: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.search svg {
+    color: red;
+    margin-right: 20px;
+}
+
+.search input {
+    border: none;
+    width: 100%;
+    outline: none;
+}
